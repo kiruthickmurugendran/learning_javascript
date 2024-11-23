@@ -1,0 +1,35 @@
+<h1>guess the number</h1>
+<input id="one">
+<button onclick="check()">check</button>
+<h2 id="two">you are correct/wrong</h2>
+<h3 id="three">your score </h3>
+<script>
+    var n = 10
+    var box1 = document.getElementById("one")
+    var box2 = Math.random()
+    var box3 = document.getElementById("two")
+    var box4 = document.getElementById("three")
+    var result = box3.textContent
+    var score = box4.textContent
+    
+    function check(){
+        var box5 = Math.floor(box2)
+        var a = box5*10
+        var b = box1.value
+        for(n=10;n<=0;n--){
+            if(a==b){
+                result.textContent = "you are correct";
+                score.textContent = "your score is "+n;
+            }
+            else{
+                result.textContent = "you are incorrect";
+                score.textContent = "your score is "+n;
+            }
+    
+        }
+
+    }
+
+
+
+</script>
