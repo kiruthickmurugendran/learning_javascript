@@ -1,0 +1,19 @@
+<button id="one" onclick="python()">python</button>
+<button id="two" onclick="c()"> c </button>
+<button id="three" onclick="java()"> java </button>
+<h1 id="result"> Your text</h1>
+
+<script>
+    var box1 = document.getElementById("result")
+    var box2 = box1.textContent
+    function python(){
+        box1.textContent = "python";
+    }
+    function c(){
+        box1.textContent = "c";
+    }
+    function java(){
+        box1.textContent = "java";
+    }
+
+</script>
