@@ -11,25 +11,22 @@
     var box4 = document.getElementById("three")
     var result = box3.textContent
     var score = box4.textContent
+    var totalscore = 10
     
     function check(){
         var box5 = Math.floor(box2)
-        var a = box5*10
+        var a = (box5*10)+1
         var b = box1.value
-        for(n=10;n<=0;n--){
-            if(a==b){
-                result.textContent = "you are correct";
-                score.textContent = "your score is "+n;
-            }
-            else{
-                result.textContent = "you are incorrect";
-                score.textContent = "your score is "+n;
+        if(a==b){
+            box3.textContent = "you are correct";
+            box4.textContent = "your score is "+totalscore;
+            alert("you won")
+        }
+        else{
+            var n = totalscore-1
+            box3.textContent = "you are incorrect";
+            box4.textContent = "your score is "+n;
             }
     
         }
-
-    }
-
-
-
-</script>
+        </script>
